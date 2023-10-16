@@ -17,6 +17,16 @@ const routes = [
         component: () => import('@/components/board/SimplePaginated.vue')
     },
     {
+        path: '/board/list/:name',
+        name: 'simple-name-pagination',
+        component: () => import('@/components/board/SimplePaginated.vue')
+    },
+    {
+        path: '/department/board/list/:name',
+        name: 'department-simple-name-pagination',
+        component: () => import('@/components/board/Department-SimplePaginated.vue')
+    },
+    {
         path: '/member/login',
         name: 'MemberLogin',
         component: () => import('@/components/member/MemberLogin')
@@ -40,6 +50,11 @@ const routes = [
         path: '/admin/member/update',
         name: 'MemberUpdatePage',
         component: () => import('@/components/admin/MemberUpdate.vue')
+    },
+    {
+        path: '/admin/department/add',
+        name: 'DepartmentAddPage',
+        component: () => import('@/components/admin/DepartmentAdd.vue')
     }
 ];
 

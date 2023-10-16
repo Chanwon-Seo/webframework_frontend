@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DepartmentInfoCategory></DepartmentInfoCategory>
+    <DepartmentInfoCategory :temp="title.departmentInfoCategoryBoardUrl"></DepartmentInfoCategory>
     <img class="imageSize" :src="title.departmentImgUrl">
     <h1 class="jb-text">{{ title.departmentName }}</h1>
   </div>
@@ -14,7 +14,7 @@ export default {
   components: {DepartmentInfoCategory},
   data() {
     return {
-      title: "",
+      title: '',
     }
   },
   created() {
@@ -22,14 +22,13 @@ export default {
   },
   methods: {
     loadData() {
-      const id = this.$route.params.id;
+      let id = this.$route.params.id;
       axios.get(`/department/${id}`)
           .then((response) => {
             // 데이터를 가져왔을 때 할 작업
             this.title = response.data
           })
           .catch((error) => {
-
             console.error("데이터를 불러오는 동안 오류 발생:", error);
           });
     },

@@ -196,8 +196,29 @@
               </div>
             </div>
           </li>
-          <li class="nav-item">
-            <router-link :to="{path:'/board/list'}" class="nav-link">커뮤니티</router-link>
+          <!--공지사항-->
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+               data-mdb-toggle="dropdown" aria-expanded="false">
+              공지사항
+            </a>
+            <!-- Dropdown menu -->
+            <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="
+                          border-top-left-radius: 0;
+                          border-top-right-radius: 0;
+                        ">
+              <div class="container">
+                <div class="row my-4">
+                  <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="list-group list-group-flush">
+                      <a class="list-group-item list-group-item-action" href="/board/list">공지사항</a>
+                      <a class="list-group-item list-group-item-action" href="/board/list/affairs">학적</a>
+                      <a class="list-group-item list-group-item-action" href="/board/list/sst">장학</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <div v-if="loggedIn">
             <li class="nav-item">
@@ -220,6 +241,7 @@
     </div>
     <!-- Container wrapper -->
   </nav>
+
 </template>
 
 <script>

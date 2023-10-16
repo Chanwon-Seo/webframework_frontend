@@ -3,6 +3,7 @@
   <ul>
     <router-link :to="{path:'/admin/member/add'}" class="nav-link">교직원추가</router-link>
     <router-link :to="{path:'/admin/member/update'}" class="nav-link">교직원수정</router-link>
+    <router-link :to="{path:'/admin/department/add'}" class="nav-link">학과추가</router-link>
   </ul>
 </template>
 

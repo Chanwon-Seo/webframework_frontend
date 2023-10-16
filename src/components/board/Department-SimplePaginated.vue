@@ -2,20 +2,20 @@
   <div>
     <DepartmentName></DepartmentName>
     <h1>{{ titleName }}</h1>
-    <PaginatedList :list-array="pageArray"/>
+    <DepartmentPaginatedList :list-array="pageArray"/>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import PaginatedList from "@/components/board/Paginated-list.vue";
 import DepartmentName from "@/components/department/DepartmentName.vue";
+import DepartmentPaginatedList from "@/components/board/Department-Paginated-list.vue";
 
 export default {
-  name: 'simple-pagination',
+  name: 'department-simple-pagination',
   components: {
+    DepartmentPaginatedList,
     DepartmentName,
-    PaginatedList
   },
   data() {
     return {
