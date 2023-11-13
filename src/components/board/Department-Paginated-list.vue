@@ -49,7 +49,7 @@ export default {
     },
     prevPage() {
       this.pageNum -= 1;
-    }
+    },
   },
   computed: {
     pageCount() {

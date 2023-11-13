@@ -13,7 +13,10 @@
             <a href="/"><img src="https://www.inhatc.ac.kr/sites/kr/intro01/images/img-logo.png" alt="logo"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" :href="temp">커뮤니티</a>
+            <a class="nav-link" :href="temp.departmentDetailUrl">학과소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" :href="temp.departmentInfoCategoryBoardUrl">커뮤니티</a>
           </li>
         </ul>
       </div>

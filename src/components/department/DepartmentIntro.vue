@@ -1,8 +1,7 @@
 <template>
   <div>
     <DepartmentInfoCategory :temp="title"></DepartmentInfoCategory>
-    <img class="imageSize" :src="title.departmentImgUrl">
-    <h1 class="jb-text">{{ title.departmentName }}</h1>
+    <p class="jb-text">{{ title.departmentDetailText }}</p>
   </div>
 </template>
 
@@ -44,18 +43,4 @@ export default {
 </script>
 
 <style>
-
-.jb-text {
-  padding: 5px 10px;
-  background-color: yellow;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.imageSize {
-  height: 1000px;
-  width: 1800px;
-}
 </style>
