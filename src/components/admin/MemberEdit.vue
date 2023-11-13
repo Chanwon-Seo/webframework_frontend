@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <DepartmentName></DepartmentName>
-    <h1>학과명 추가</h1>
+    <h1>회원 수정</h1>
     <form class="form-group" v-on:submit.prevent="submitForm">
-      <input v-model="departmentName" type="text" class="form-control" placeholder="학과명">
-      <input v-model="departmentCode" type="text" class="form-control" placeholder="학과코드">
-      <input v-model="departmentImgUrl" type="text" class="form-control" placeholder="백그라운드이미지URL">
+      <input v-model="memberName" type="text" class="form-control" placeholder="이름">
+      <input v-model="firstSSN" type="number" class="form-control" placeholder="생년월일">
+      <input v-model="departmentName" type="text" class="form-control" placeholder="학과">
       <button type="submit" class="btn btn-primary">등록</button>
     </form>
   </div>
@@ -18,12 +18,16 @@ import DepartmentName from "@/components/department/DepartmentName.vue";
 export default {
   data: function () {
     return {
+      memberName: '',
+      memberNumber: '',
+      password: '',
       departmentName: '',
-      departmentCode: '',
-      departmentImgUrl: '',
+      firstSSN: '',
+      lastSSN: '',
+
     }
   },
-  name: "MemberLogin",
+  name: "MemberAddPage",
   components: {DepartmentName},
   created() {
     axios.get('/api/checkLoginStatus')
@@ -42,11 +46,14 @@ export default {
   },
   methods: {
     submitForm: function () {
-      const url = '/admin/department/add';
+      const url = '/admin/member/add';
       const data = {
+        memberName: this.memberName,
+        memberNumber: this.memberNumber,
+        password: this.password,
         departmentName: this.departmentName,
-        departmentCode: this.departmentCode,
-        departmentImgUrl: this.departmentImgUrl,
+        firstSSN: this.firstSSN,
+        lastSSN: this.lastSSN,
       }
       const vm = this; // this를 vm 변수에 할당
       axios.post(url, data)
@@ -63,7 +70,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

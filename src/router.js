@@ -47,9 +47,14 @@ const routes = [
         component: () => import('@/components/admin/MemberAdd.vue')
     },
     {
-        path: '/admin/member/update',
-        name: 'MemberUpdatePage',
-        component: () => import('@/components/admin/MemberUpdate.vue')
+        path: '/admin/member/edit',
+        name: 'MemberEditPage',
+        component: () => import('@/components/admin/MemberEdit.vue')
+    },
+    {
+        path: '/admin/member/add/new',
+        name: 'MemberAddNewPag',
+        component: () => import('@/components/admin/MemberAddNew.vue')
     },
     {
         path: '/admin/department/add',

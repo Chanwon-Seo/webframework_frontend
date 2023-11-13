@@ -6,12 +6,9 @@
 
 <script>
 
-import axios from "axios";
-
 export default {
   data: function () {
     return {
-      title: "hello",
     };
   },
   name: "App",
@@ -19,13 +16,7 @@ export default {
   mounted() {
     this.load();
   },
-  methods: {
-    load() {
-      axios.get("/all").then((res) => {
-        this.title = res.data;
-      });
-    },
-  }
+  methods: {}
 }
 </script>
 

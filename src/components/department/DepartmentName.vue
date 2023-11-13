@@ -34,15 +34,15 @@
                       <p class="mb-0 list-group-item text-uppercase font-weight-bold">
                         기계공학부
                       </p>
-                      <router-link :to="{path:'/department/mecheng', params:{id:'mecheng'}}"
+                      <router-link :to="{path:'/department/mecheng'}"
                                    class="list-group-item list-group-item-action">
                         기계공학과
                       </router-link>
-                      <router-link :to="{path:'/department/md', params:{id:'md'}}"
+                      <router-link :to="{path:'/department/md'}"
                                    class="list-group-item list-group-item-action">
                         기계설계공학과
                       </router-link>
-                      <router-link :to="{path:'/department/mecha', params:{id:'mecha'}}"
+                      <router-link :to="{path:'/department/mecha'}"
                                    class="list-group-item list-group-item-action">
                         메카트로닉스공학과
                       </router-link>
@@ -53,15 +53,15 @@
                       <p class="mb-0 list-group-item text-uppercase font-weight-bold">
                         수송기계학부
                       </p>
-                      <router-link :to="{path:'/department/sos', params:{id:'sos'}}"
+                      <router-link :to="{path:'/department/sos'}"
                                    class="list-group-item list-group-item-action">
                         조선기계공학과
                       </router-link>
-                      <router-link :to="{path:'/department/ame', params:{id:'ame'}}"
+                      <router-link :to="{path:'/department/ame'}"
                                    class="list-group-item list-group-item-action">
                         항공기계공학과
                       </router-link>
-                      <router-link :to="{path:'/department/auto', params:{id:'auto'}}"
+                      <router-link :to="{path:'/department/auto'}"
                                    class="list-group-item list-group-item-action">
                         자동차공학과
                       </router-link>
@@ -71,15 +71,15 @@
                     <div class="list-group list-group-flush">
                       <p class="mb-0 list-group-item text-uppercase font-weight-bold">
                         정보산업공학부 </p>
-                      <router-link :to="{path:'/department/ee', params:{id:'ee'}}"
+                      <router-link :to="{path:'/department/ee'}"
                                    class="list-group-item list-group-item-action">
                         전기공학과
                       </router-link>
-                      <router-link :to="{path:'/department/er', params:{id:'er'}}"
+                      <router-link :to="{path:'/department/er'}"
                                    class="list-group-item list-group-item-action">
                         전자공학과
                       </router-link>
-                      <router-link :to="{path:'/department/inc', params:{id:'inc'}}"
+                      <router-link :to="{path:'/department/inc'}"
                                    class="list-group-item list-group-item-action">
                         정보통신공학과
                       </router-link>
@@ -90,11 +90,11 @@
                       <p class="mb-0 list-group-item text-uppercase font-weight-bold">
                         컴퓨터정보공학부
                       </p>
-                      <router-link :to="{path:'/department/cs', params:{id:'cs'}}"
+                      <router-link :to="{path:'/department/cs'}"
                                    class="list-group-item list-group-item-action">
                         컴퓨터정보과
                       </router-link>
-                      <router-link :to="{path:'/department/cse', params:{id:'cse'}}"
+                      <router-link :to="{path:'/department/cse'}"
                                    class="list-group-item list-group-item-action">
                         컴퓨터시스템과
                       </router-link>
@@ -108,11 +108,11 @@
                       <p class="mb-0 list-group-item text-uppercase font-weight-bold">
                         지구환경공학부
                       </p>
-                      <router-link :to="{path:'/department/civil', params:{id:'civil'}}"
+                      <router-link :to="{path:'/department/civil'}"
                                    class="list-group-item list-group-item-action">
                         건설환경공학과
                       </router-link>
-                      <router-link :to="{path:'/department/gisup', params:{id:'gisup'}}"
+                      <router-link :to="{path:'/department/gisup'}"
                                    class="list-group-item list-group-item-action">
                         공간정보빅데이터과
                       </router-link>
@@ -123,11 +123,11 @@
                       <p class="mb-0 list-group-item text-uppercase font-weight-bold">
                         건축학부
                       </p>
-                      <router-link :to="{path:'/department/archi', params:{id:'archi'}}"
+                      <router-link :to="{path:'/department/archi'}"
                                    class="list-group-item list-group-item-action">
                         건축학과
                       </router-link>
-                      <router-link :to="{path:'/department/interior', params:{id:'interior'}}"
+                      <router-link :to="{path:'/department/interior'}"
                                    class="list-group-item list-group-item-action">
                         실내건축과
                       </router-link>
@@ -137,11 +137,11 @@
                     <div class="list-group list-group-flush">
                       <p class="mb-0 list-group-item text-uppercase font-weight-bold">
                         신소재공학부 </p>
-                      <router-link :to="{path:'/department/chem', params:{id:'chem'}}"
+                      <router-link :to="{path:'/department/chem'}"
                                    class="list-group-item list-group-item-action">
                         화학생명공학과
                       </router-link>
-                      <router-link :to="{path:'/department/mse', params:{id:'mse'}}"
+                      <router-link :to="{path:'/department/mse'}"
                                    class="list-group-item list-group-item-action">
                         재료공학과
                       </router-link>
@@ -152,23 +152,23 @@
                       <p class="mb-0 list-group-item text-uppercase font-weight-bold">
                         서비스학부
                       </p>
-                      <router-link :to="{path:'/department/cbncrew', params:{id:'cbncrew'}}"
+                      <router-link :to="{path:'/department/cbncrew'}"
                                    class="list-group-item list-group-item-action">
                         항공운항과
                       </router-link>
-                      <router-link :to="{path:'/department/asm', params:{id:'asm'}}"
+                      <router-link :to="{path:'/department/asm'}"
                                    class="list-group-item list-group-item-action">
                         항공경영학과
                       </router-link>
-                      <router-link :to="{path:'/department/tour', params:{id:'tour'}}"
+                      <router-link :to="{path:'/department/tour'}"
                                    class="list-group-item list-group-item-action">
                         관광경영학과
                       </router-link>
-                      <router-link :to="{path:'/department/secretary', params:{id:'secretary'}}"
+                      <router-link :to="{path:'/department/secretary'}"
                                    class="list-group-item list-group-item-action">
                         비서과
                       </router-link>
-                      <router-link :to="{path:'/department/hotel', params:{id:'hotel'}}"
+                      <router-link :to="{path:'/department/hotel'}"
                                    class="list-group-item list-group-item-action">
                         호텔경영학과
                       </router-link>
@@ -182,11 +182,11 @@
                       <p class="mb-0 list-group-item text-uppercase font-weight-bold">
                         디자인학부
                       </p>
-                      <router-link :to="{path:'/department/industrydesign', params:{id:'industrydesign'}}"
+                      <router-link :to="{path:'/department/industrydesign'}"
                                    class="list-group-item list-group-item-action">
                         산업디자인학과
                       </router-link>
-                      <router-link :to="{path:'/department/fashion', params:{id:'fashion'}}"
+                      <router-link :to="{path:'/department/fashion'}"
                                    class="list-group-item list-group-item-action">
                         패션디자인학과
                       </router-link>

@@ -9,7 +9,7 @@
               <h1>로그인</h1>
               <form class="form-group" v-on:submit.prevent="submitForm">
                 <p class="textColor">{{ errorText }}</p>
-                <input v-model="memberNumber" type="number" class="form-control" placeholder="학번">
+                <input v-model="memberNumber" type="number" class="form-control" placeholder="아이디">
                 <input v-model="password" type="password" class="form-control" placeholder="비밀번호">
                 <button type="submit" class="btn btn-primary">로그인</button>
               </form>
