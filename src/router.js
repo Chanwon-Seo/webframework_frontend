@@ -18,18 +18,23 @@ const routes = [
     },
     {
         path: '/board/list',
-        name: 'simple-pagination',
+        name: 'Simple-pagination',
         component: () => import('@/components/board/SimplePaginated')
     },
     {
         path: '/board/list/:name',
-        name: 'simple-name-pagination',
+        name: 'Simple-name-pagination',
         component: () => import('@/components/board/SimplePaginated')
     },
     {
         path: '/department/board/list/:name',
-        name: 'department-simple-name-pagination',
+        name: 'Department-simple-name-pagination',
         component: () => import('@/components/board/Department-SimplePaginated')
+    },
+    {
+        path: '/department/board/add/:name',
+        name: 'Department-BoardAddPage',
+        component: () => import('@/components/board/Department-BoardAdd')
     },
     {
         path: '/member/login',

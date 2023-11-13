@@ -60,13 +60,10 @@ export default {
       }
       const vm = this; // this를 vm 변수에 할당
       axios.post(url, data)
-          .then(function (response) {
-            console.log(response);
-            console.log(response.data.message);
+          .then(function () {
             location.href = "/admin"
           })
           .catch(function (error) {
-            console.log(error.response.data);
             vm.errorText = error.response.data; // vm을 사용하여 에러 메시지를 설정
           });
     }

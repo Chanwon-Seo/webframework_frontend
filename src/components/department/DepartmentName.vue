@@ -264,7 +264,6 @@ export default {
             this.memberName = response.data.memberName;
             if (response.data.memberStatus === 1) {
               this.memberStatus = "admin"
-              console.log("어드민으로 됨")
             }
           } else {
             this.loggedIn = false;

@@ -20,20 +20,17 @@ export default {
   data() {
     return {
       titleName: '',
-      pageArray: []
+      pageArray: [],
+      memberStatus: '',
     }
   },
   created() {
     let path = window.location.pathname;
     axios.get(path)
         .then(response => {
-          console.log(response);
           this.pageArray = response.data.contacts;
           this.titleName = response.data.titleName;
         })
-        .catch(err => {
-          console.log(err);
-        });
   }
 }
 </script>

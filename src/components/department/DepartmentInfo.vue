@@ -23,6 +23,7 @@ export default {
   methods: {
     loadData() {
       let id = this.$route.params.id;
+      console.log(id);
       axios.get(`/department/${id}`)
           .then((response) => {
             // 데이터를 가져왔을 때 할 작업

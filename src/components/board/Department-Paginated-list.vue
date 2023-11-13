@@ -20,11 +20,16 @@
       <button :disabled="pageNum >= pageCount - 1" @click="nextPage" class="page-btn">
         다음
       </button>
+      <button @click="boardAdd" v-if="memberStatus === 'business'" class="page-btn">
+        추가
+      </button>
     </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: 'department-paginated-list',
   data() {
@@ -50,6 +55,27 @@ export default {
     prevPage() {
       this.pageNum -= 1;
     },
+    boardAdd() {
+      let name = this.$route.params.name;
+      window.location.href = "/department/board/add/" + name;
+    }
+  },
+  created() {
+    axios.get('/api/checkLoginStatus')
+        .then(response => {
+          if (response.data.loggedIn === true) {
+            this.loggedIn = response.data.loggedIn;
+            this.memberName = response.data.memberName;
+            if (response.data.memberStatus === 2) {
+              this.memberStatus = "business"
+            }
+          } else {
+            this.loggedIn = false;
+          }
+        })
+        .catch(error => {
+          console.error('Error checking login status:', error);
+        });
   },
   computed: {
     pageCount() {

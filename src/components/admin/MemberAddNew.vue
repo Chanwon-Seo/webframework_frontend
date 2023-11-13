@@ -45,13 +45,10 @@ export default {
       const url = '/admin/member/add/new';
       const vm = this;
       axios.post(url, this.jsonList)
-          .then(function (response) {
-            console.log(response);
-            console.log(response.data.message);
+          .then(function () {
             location.href = "/admin"
           })
           .catch(function (error) {
-            console.log(error.response.data);
             vm.errorText = error.response.data; // vm을 사용하여 에러 메시지를 설정
           });
     }

@@ -20,6 +20,7 @@
       <button :disabled="pageNum >= pageCount - 1" @click="nextPage" class="page-btn">
         다음
       </button>
+
     </div>
   </div>
 </template>
@@ -49,7 +50,7 @@ export default {
     },
     prevPage() {
       this.pageNum -= 1;
-    }
+    },
   },
   computed: {
     pageCount() {
