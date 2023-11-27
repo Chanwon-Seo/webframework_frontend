@@ -1,24 +1,10 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <router-view/>
 </template>
 
 <script>
-
 export default {
-  data: function () {
-    return {
-    };
-  },
-  name: "App",
-  components: {},
-  mounted() {
-    this.load();
-  },
-  methods: {}
+  name: 'App',
+  components: { }
 }
 </script>
-
-<style>
-</style>

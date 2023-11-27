@@ -15,12 +15,15 @@
       <p class="form-control form-custom">{{ findFirstSSN }}</p>
       <p class="form-control form-custom">{{ findLastSSN }}</p>
     </div>
+    <BarChart />
+
   </div>
 </template>
 
 <script>
 import axios from 'axios';
 import DepartmentName from "@/components/department/DepartmentName.vue";
+import BarChart from "@/BarChart.vue";
 
 export default {
   data: function () {
@@ -35,7 +38,7 @@ export default {
     }
   },
   name: "MemberAddPage",
-  components: {DepartmentName},
+  components: {BarChart, DepartmentName},
   created() {
     axios.get('/api/checkLoginStatus')
         .then(response => {

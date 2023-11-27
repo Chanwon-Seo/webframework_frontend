@@ -75,6 +75,11 @@ const routes = [
         path: '/admin/member/find',
         name: 'MemberFindPage',
         component: () => import('@/components/admin/MemberFind')
+    },
+    {
+        path: '/admin/member/dashboard',
+        name: 'MemberDashBoardPage',
+        component: () => import('@/components/admin/MemberDashBoard')
     }
 ];
 
