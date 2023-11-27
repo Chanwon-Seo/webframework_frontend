@@ -6,7 +6,7 @@
     <router-link :to="{path:'/admin/member/edit'}" class="nav-link">회원수정</router-link>
     <router-link :to="{path:'/admin/member/add/new'}" class="nav-link">신입생추가</router-link>
     <router-link :to="{path:'/admin/member/find'}" class="nav-link">회원정보</router-link>
-    <router-link :to="{path:'/admin/member/dashboard'}" class="nav-link">년도별</router-link>
+    <router-link :to="{path:'/admin/member/dashboard'}" class="nav-link">재학생 현황</router-link>
   </ul>
 </template>
 
