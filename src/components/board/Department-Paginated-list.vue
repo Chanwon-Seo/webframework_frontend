@@ -20,7 +20,7 @@
       <button :disabled="pageNum >= pageCount - 1" @click="nextPage" class="page-btn">
         다음
       </button>
-      <button @click="boardAdd" v-if="memberStatus === 'business'" class="page-btn">
+      <button @click="boardAdd" v-if="memberStatus === 'manager'" class="page-btn">
         추가
       </button>
     </div>
@@ -66,8 +66,8 @@ export default {
           if (response.data.loggedIn === true) {
             this.loggedIn = response.data.loggedIn;
             this.memberName = response.data.memberName;
-            if (response.data.memberStatus === 2) {
-              this.memberStatus = "business"
+            if (response.data.memberStatus === 2 && this.$route.params.name === response.data.departmentCode) {
+              this.memberStatus = "manager"
             }
           } else {
             this.loggedIn = false;
@@ -83,11 +83,6 @@ export default {
           listSize = this.pageSize,
           page = Math.floor(listLeng / listSize);
       if (listLeng % listSize > 0) page += 1;
-
-      /*
-      아니면 page = Math.floor((listLeng - 1) / listSize) + 1;
-      이런식으로 if 문 없이 고칠 수도 있다!
-      */
       return page;
     },
     paginatedData() {

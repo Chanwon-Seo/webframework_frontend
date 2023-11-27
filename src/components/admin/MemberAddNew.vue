@@ -19,6 +19,7 @@ import axios from "axios";
 import DepartmentName from "@/components/department/DepartmentName.vue";
 
 export default {
+  name: "MemberAddNewPage",
   components: {DepartmentName},
   data() {
     return {

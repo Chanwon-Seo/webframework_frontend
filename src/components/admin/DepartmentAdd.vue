@@ -5,6 +5,7 @@
     <form class="form-group" v-on:submit.prevent="submitForm">
       <input v-model="departmentName" type="text" class="form-control" placeholder="학과명">
       <input v-model="departmentCode" type="text" class="form-control" placeholder="학과코드">
+      <!-- 학과 소개     -->
       <input v-model="departmentImgUrl" type="text" class="form-control" placeholder="백그라운드이미지URL">
       <button type="submit" class="btn btn-primary">등록</button>
     </form>

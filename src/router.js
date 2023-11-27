@@ -70,6 +70,11 @@ const routes = [
         path: '/admin/department/add',
         name: 'DepartmentAddPage',
         component: () => import('@/components/admin/DepartmentAdd')
+    },
+    {
+        path: '/admin/member/find',
+        name: 'MemberFindPage',
+        component: () => import('@/components/admin/MemberFind')
     }
 ];
 
