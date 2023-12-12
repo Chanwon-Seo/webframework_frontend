@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <DepartmentName></DepartmentName>
-    <h1>학과명 추가</h1>
+    <h1>학과 추가</h1>
     <form class="form-group" v-on:submit.prevent="submitForm">
       <input v-model="departmentName" type="text" class="form-control" placeholder="학과명">
       <input v-model="departmentCode" type="text" class="form-control" placeholder="학과코드">

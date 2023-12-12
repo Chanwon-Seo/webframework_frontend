@@ -1,19 +1,19 @@
 <template>
   <div>
     <p v-if="loading">로딩 중...</p>
-    <Bar v-if="!loading" :options="chartOptions" :data="chartData" />
+    <Bar v-if="!loading" :options="chartOptions" :data="chartData"/>
   </div>
 </template>
 
 <script>
-import { Bar } from 'vue-chartjs';
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
+import {Bar} from 'vue-chartjs';
+import {Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale} from 'chart.js';
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
 
 export default {
   name: 'BarChart',
-  components: { Bar },
+  components: {Bar},
   props: {
     chartData: {
       type: Object,
